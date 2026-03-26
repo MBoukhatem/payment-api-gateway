@@ -1,0 +1,30 @@
+{
+  "name": "mini-paypal-gateway",
+  "version": "1.0.0",
+  "description": "API Gateway for Mini-PayPal microservices",
+  "main": "src/app.js",
+  "engines": {
+    "node": ">=24.14.0"
+  },
+  "scripts": {
+    "start": "node --env-file=.env src/app.js",
+    "dev": "nodemon --env-file=.env src/app.js",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.1",
+    "helmet": "^8.1.0",
+    "http-proxy-middleware": "^3.0.5",
+    "jsonwebtoken": "^9.0.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.29.0",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.1"
+  }
+}
